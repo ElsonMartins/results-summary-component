@@ -11,10 +11,10 @@
   --Violet-blue-circle: hsla(256, 72%, 46%, 1);
   --Persian-blue-circle: hsla(241, 72%, 46%, 0);
 
-  --White: hsl(0, 0%, 100%)
-  --Pale-blue: hsl(221, 100%, 96%)
-  --Light-lavender: hsl(241, 100%, 89%)
-  --Dark-gray-blue: hsl(224, 30%, 27%)
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
 }
 
 *{
@@ -25,6 +25,10 @@
 body {
   font-family: 'Hanken Grotesk', sans-serif;
   font-size: 1.2rem;
+}
+
+.container {
+  display: grid;
 }
 
 
