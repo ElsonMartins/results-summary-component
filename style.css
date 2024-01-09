@@ -3,10 +3,15 @@
 :root {
   /*Primary*/
 
-  --Light-red: hsl(0, 100%, 67%);
-  --Orangey-yellow: hsl(39, 100%, 56%);
-  --Green-teal: hsl(166, 100%, 37%);
-  --Cobalt-blue: hsl(234, 85%, 45%);
+  --red:  hsl(0, 100%, 67%);
+  --yellow:hsl(39, 100%, 56%);
+  --green:hsl(166, 100%, 37%);
+  --cobalt:hsl(234, 85%, 45%);
+
+  --Light-red: hsla(0, 100%, 67%, 0.14);
+  --Orangey-yellow: hsla(39, 100%, 56%, 0.14);
+  --Green-teal: hsla(166, 100%, 37%, 0.14);
+  --Cobalt-blue: hsla(234, 85%, 45%, 0.14);
 
   /*Gradients*/
 
@@ -26,6 +31,7 @@
 *{
   padding: 0;
   margin: 0;
+  text-decoration: none;
 }
 
 body {
@@ -90,6 +96,112 @@ body {
   color: var(--Light-lavender);
   padding-top: 1rem;
   font-size: 1.1rem;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-weight: 700;
+  box-shadow: 3rem 3rem var(--Pale-blue) solid;
+}
+
+.color {
+  color: var(--Light-lavender);
+  margin-left: -0.8rem;
+}
+
+.summary p{
+  display: inline-flex;
+}
+
+.summary h3 {
+  color: var(--Dark-gray-blue);
+  font-weight: 800;
+  margin: 2rem 0 0 2rem;
+  font-size: 1.7rem;
+}
+
+.reaction {
+  display: inline-flex;
+  word-spacing: 1rem;
+  margin: 1rem 0 0 2rem;
+  background-color: var(--Light-red);
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.reac{
+  color: var(--red);
+  margin-left: 1rem;
+  
+}
+
+.reac-conteudo {
+  margin-left: 4rem;
+  color: var(--Dark-gray-blue);
+  
+}
+
+.memory {
+  display: inline-flex;
+  word-spacing: 1rem;
+  margin: 1rem 0 0 2rem;
+  background-color: var(--Orangey-yellow);
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+}
+
+.memo{
+  color: var(--yellow);
+  margin-left: 1rem;
+  
+}
+
+.memory-conteudo {
+  margin-left: 4rem;
+  color: var(--Dark-gray-blue);
+}
+
+.verbal {
+  display: inline-flex;
+  word-spacing: 1rem;
+  margin: 1rem 0 0 2rem;
+  background-color: var(--Green-teal);
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+}
+
+.ver{
+  color: var(--green);
+  margin-left: 1rem;
+  
+}
+
+.verbal-conteudo {
+  margin-left: 4rem;
+  color: var(--Dark-gray-blue);
+}
+
+.visual {
+  display: inline-flex;
+  word-spacing: 1rem;
+  margin: 1rem 0 0 2rem;
+  background-color: var(--Cobalt-blue);
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+}
+
+.visu{
+  color: var(--cobalt);
+  margin-left: 1rem;
+  
+}
+
+.visual-conteudo {
+  margin-left: 4rem;
+  color: var(--Dark-gray-blue);
 }
 
 
