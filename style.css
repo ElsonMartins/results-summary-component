@@ -8,10 +8,10 @@
   --green:hsl(166, 100%, 37%);
   --cobalt:hsl(234, 85%, 45%);
 
-  --Light-red: hsla(0, 100%, 67%, 0.14);
-  --Orangey-yellow: hsla(39, 100%, 56%, 0.14);
-  --Green-teal: hsla(166, 100%, 37%, 0.14);
-  --Cobalt-blue: hsla(234, 85%, 45%, 0.14);
+  --Light-red: hsla(0, 100%, 67%, 0.12);
+  --Orangey-yellow: hsla(39, 100%, 56%, 0.12);
+  --Green-teal: hsla(166, 100%, 37%, 0.1);
+  --Cobalt-blue: hsla(234, 85%, 45%, 0.1);
 
   /*Gradients*/
 
@@ -39,14 +39,18 @@ body {
   font-size: 1.2rem;
   display: grid;
   place-content: center;
-  padding: 10rem;  
+  padding: 10rem; 
+  background-color: var(--White);
+  min-height: 100vh; 
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 42rem;
+  max-width: 46rem;
   min-height: 30.4rem;
+  box-shadow: 0.5rem 0.5rem 2rem var(--Pale-blue);
+  border-radius: 1.7rem;
 }
 
 .resultado {
@@ -103,7 +107,7 @@ body {
   flex-direction: column;
   gap: 0.6rem;
   font-weight: 700;
-  box-shadow: 3rem 3rem var(--Pale-blue) solid;
+  border-radius: 1.7rem;
 }
 
 .color {
@@ -112,7 +116,7 @@ body {
 }
 
 .summary p{
-  display: inline-flex;
+  display: inline-block;
 }
 
 .summary h3 {
@@ -129,19 +133,18 @@ body {
   background-color: var(--Light-red);
   padding: 0.7rem;
   border-radius: 0.5rem;
-  position: relative;
+  max-width: 16rem;
 }
 
 .reac{
   color: var(--red);
   margin-left: 1rem;
-  
 }
 
 .reac-conteudo {
   margin-left: 4rem;
   color: var(--Dark-gray-blue);
-  
+  padding-left: 0.5rem;
 }
 
 .memory {
@@ -151,6 +154,7 @@ body {
   background-color: var(--Orangey-yellow);
   padding: 0.7rem;
   border-radius: 0.5rem;
+  max-width: 16rem;
 }
 
 .memo{
@@ -162,6 +166,7 @@ body {
 .memory-conteudo {
   margin-left: 4rem;
   color: var(--Dark-gray-blue);
+  padding-left: 0.8rem;
 }
 
 .verbal {
@@ -171,6 +176,7 @@ body {
   background-color: var(--Green-teal);
   padding: 0.7rem;
   border-radius: 0.5rem;
+  max-width: 16rem;
 }
 
 .ver{
@@ -182,6 +188,7 @@ body {
 .verbal-conteudo {
   margin-left: 4rem;
   color: var(--Dark-gray-blue);
+  padding-left: 1.8rem;
 }
 
 .visual {
@@ -191,19 +198,41 @@ body {
   background-color: var(--Cobalt-blue);
   padding: 0.7rem;
   border-radius: 0.5rem;
+  justify-content: start;
+  max-width: 16rem;
 }
 
 .visu{
   color: var(--cobalt);
   margin-left: 1rem;
-  
 }
 
 .visual-conteudo {
   margin-left: 4rem;
   color: var(--Dark-gray-blue);
+  padding-left: 2rem;
+}
+.botao {
+  margin: 1.7rem 0 0 2rem;
+  max-width: 16rem;
+  padding: 0.8rem;
+  background-color: var(--Dark-gray-blue);
+  display: grid;
+  place-content: center;
+  border-radius: 2rem;
 }
 
+.botao a {
+  color: var(--White);
+}
 
+.botao:hover{
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.attribution {
+  text-align: center;
+  padding-top: 2.5rem;
+}
 
 /* Mobile: 375px 24rem */
