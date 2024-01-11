@@ -8,8 +8,8 @@
   --green:hsl(166, 100%, 37%);
   --cobalt:hsl(234, 85%, 45%);
 
-  --Light-red: hsla(0, 100%, 67%, 0.12);
-  --Orangey-yellow: hsla(39, 100%, 56%, 0.12);
+  --Light-red: hsla(0, 100%, 67%, 0.1);
+  --Orangey-yellow: hsla(39, 100%, 56%, 0.1);
   --Green-teal: hsla(166, 100%, 37%, 0.1);
   --Cobalt-blue: hsla(234, 85%, 45%, 0.1);
 
@@ -58,7 +58,7 @@ body {
   border-radius: 1.7rem;
 }
 
-.resultado h3 {
+.resultado p {
   padding: 2.1rem;
   color: var(--Light-lavender);
   font-weight: 500;
@@ -84,10 +84,11 @@ body {
 .circulo p{
   color: var(--Light-lavender);
   font-size: 1rem;
+  padding: 0.1rem;
 }
 
 .conteudo {
-  margin: 0 2.9rem;
+  margin: 0 2rem;
 }
 
 .conteudo h2{
@@ -99,7 +100,7 @@ body {
 .conteudo p {
   color: var(--Light-lavender);
   padding-top: 1.3rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .summary {
@@ -221,7 +222,7 @@ body {
   display: grid;
   place-content: center;
   border-radius: 2rem;
-  
+  cursor: pointer;
 }
 
 .botao a {
@@ -237,7 +238,7 @@ body {
   padding-top: 2.5rem;
 }
 
-@media (max-width: 25rem){
+@media (max-width: 400px){
   .container {
     display: flex;
     flex-direction: column;
@@ -362,7 +363,8 @@ body {
   }
 
   .attribution {
-    padding-top: 1rem;
+    padding: 1rem 0;
+    font-size: 1rem;
   }
 }
 /* Mobile: 375px 24rem */
